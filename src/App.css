@@ -1,0 +1,299 @@
+.app {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.app__videoFeed {
+   top: 440px;
+   left: 24px;
+   position: fixed;
+   border-radius: 50%;
+   border: 1px solid transparent !important;
+   width: 200px;
+   height: 200px;
+   z-index: 2;
+   object-fit: cover;
+}
+
+#OnlyCam {
+   position: relative;
+   top: -150px;
+   right: 893px;
+   z-index: 32;
+   object-fit: cover;
+}
+
+.CameraRec {
+   position: absolute;
+   top: 50px;
+   right: -376px;
+   border-radius: 37px;
+
+}
+
+#StartCameraBtn {
+   color: white;
+   background-color: black;
+   border: 1px solid black;
+   font-size: 28px;
+   position: absolute;
+   top: 318px;
+   right: 45.2px;
+   border-radius: 13px;
+   padding: 0px 25px;
+   z-index: 3;
+   visibility: hidden;
+}
+
+#StopCameraBtn {
+   color: white;
+   background-color: black;
+   border: 1px solid black;
+   font-size: 28px;
+   position: absolute;
+   top: 318px;
+   right: 45.2px;
+   border-radius: 13px;
+   padding: 0px 25px;
+   z-index: 3;
+   visibility: hidden;
+}
+
+.VideoDiv {
+   position: absolute;
+   top: 210px;
+   right: 838px;
+   visibility: hidden;
+   z-index: 33;
+
+}
+
+.button {
+   width: 220px;
+}
+
+.videoheader {
+   width: 230px;
+   height: 180px;
+   position: relative;
+   top: 185px;
+   left: -300px;
+}
+
+.img {
+   text-align: center;
+   margin-top: 50px;
+   max-width: 650px;
+}
+
+.img img {
+   width: 350px;
+}
+
+.VideoContainer {
+   margin-top: 0;
+   margin-left: 300px;
+}
+
+.VideoContainer video {
+   width: 100px;
+   margin: 2px;
+
+}
+
+#can {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   bottom: 10px;
+   right: 2px;
+   z-index: -1;
+}
+
+.ToggleBtn {
+   position: absolute;
+   top: 50px;
+   left: 20px;
+   color: black;
+   background-color: white;
+   font-size: 30px;
+   border: none;
+   border-radius: 10px;
+   z-index: 123;
+}
+
+.heading {
+   text-align: center;
+}
+
+/* PopUpScreen */
+#Container {
+   pointer-events: all;
+   width: 320px;
+   height: 380px;
+   margin: 20px;
+   border-radius: 13px;
+   top: var(--lns-space-large);
+   right: var(--lns-space-large);
+   background-color: whitesmoke;
+   position: absolute;
+   top: -3px;
+   z-index: 2;
+   left: 77%;
+}
+
+
+
+#StartRecBtn {
+   color: white;
+   background-color: black;
+   border: 1px solid black;
+   font-size: 28px;
+   position: absolute;
+   top: 335px;
+   right: 3%;
+   border-radius: 13px;
+   padding: 0px 25px;
+   z-index: 3;
+
+}
+
+#StopRecBtn {
+   width: max-content;
+   height: 57px;
+   color: white;
+   background-color: black;
+   border: 1px solid black;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   position: absolute;
+   top: 35px;
+   right: 1%;
+   border-radius: 13px;
+   padding: 0px 25px;
+   z-index: 3;
+
+}
+
+/* Disabled Stop Recording Button */
+button:is(:disabled) {
+   visibility: hidden;
+   position: absolute;
+}
+
+.TopNav {
+   display: flex;
+   justify-content: space-between;
+   height: 36px;
+   padding: 10px;
+   width: 300px;
+}
+
+.AudioLabel {
+   padding: 5px;
+   font-size: 17px;
+   font-weight: bold;
+   color: red;
+}
+
+.VideoLabel {
+   padding: 5px;
+   font-size: 17px;
+   font-weight: bold;
+   color: red;
+}
+
+.VideoSeting {
+   padding: 10px;
+}
+
+.VideoSeting span {
+   margin: 10px;
+}
+
+.VideoSection {
+   margin: 10px;
+}
+
+.Recording {
+   padding: 10px;
+}
+
+.section_one {
+   margin: 10px;
+   width: 300px;
+
+}
+
+.section_two {
+   margin: 10px;
+   width: 300px;
+}
+
+.PenDrow input {
+   position: relative;
+   top: 120px;
+   z-index: 123;
+
+}
+
+.modal-content {
+   position: relative;
+   top: 125px;
+   left: -250px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 316px;
+   pointer-events: auto;
+   background-color: white;
+   background-clip: padding-box;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 0.3rem;
+   outline: 0;
+}
+
+#Icons {
+   padding: 16px 33px;
+   margin: 10px;
+   display: flex;
+   flex-flow: row nowrap;
+   -webkit-box-align: center;
+   align-items: center;
+   -webkit-box-pack: justify;
+   justify-content: space-between;
+}
+
+#Icons svg {
+   cursor: pointer;
+}
+.active {
+   border: 2px solid violet;
+   border-radius: 8px;
+   transform: scale(1.1);
+}
+  
+.ScreenTag {
+   position: absolute;
+   top: 115px;
+   left: 54px;
+}
+
+.CameraTag {
+   position: absolute;
+   top: 116px;
+   left: 128px;
+}
+
+.BothTag {
+   position: absolute;
+   top: 117px;
+   left: 213px;
+}
+
+.canvas {
+   overflow: hidden;
+}
